@@ -1,9 +1,35 @@
 {
-  "name": "i18n-opencode-skill",
+  "name": "i18n",
   "version": "1.0.0",
-  "description": "OpenCode skill for managing i18n translations using i18next-cli",
+  "description": "Skill for managing i18n translations using i18next-cli",
   "license": "MIT",
   "type": "module",
+  "author": "m19182.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m19182/i18n-skill"
+  },
+  "homepage": "",
+  "keywords": [
+    "i18n",
+    "i18next",
+    "react-i18next",
+    "translations",
+    "opencode",
+    "cli"
+  ],
+  "files": [
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "i18n-add": "./scripts/add-translation.ts",
+    "i18n-translate": "./scripts/auto-translate.ts"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "i18n:lint": "i18next-cli lint",
     "i18n:extract": "i18next-cli extract",
@@ -12,7 +38,11 @@
     "i18n:add": "tsx scripts/add-translation.ts",
     "i18n:translate": "tsx scripts/auto-translate.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepublishOnly": "npm test"
+  },
+  "dependencies": {
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/lodash.set": "^4.3.9",
@@ -21,7 +51,6 @@
     "i18next-cli": "^1.42.8",
     "lodash.set": "^4.3.2",
     "prompts": "^2.4.2",
-    "tsx": "^4.21.0",
     "typescript": "~5.9.3",
     "vitest": "^3.0.0"
   },

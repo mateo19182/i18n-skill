@@ -22,7 +22,7 @@ The project uses:
 ### Option 1: Automated Replacement (Recommended)
 
 ```bash
-pnpm i18n:replace
+pnpm i18n:translate
 ```
 
 This script:
@@ -71,7 +71,7 @@ pnpm i18n:add "category.key" "English value"
 
 ### 3. Run Automated Replacement
 ```bash
-pnpm i18n:replace
+pnpm i18n:translate
 ```
 
 ### 4. Verify
