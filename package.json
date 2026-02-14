@@ -1,0 +1,32 @@
+{
+  "name": "i18n-opencode-skill",
+  "version": "1.0.0",
+  "description": "OpenCode skill for managing i18n translations using i18next-cli",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "i18n:lint": "i18next-cli lint",
+    "i18n:extract": "i18next-cli extract",
+    "i18n:status": "i18next-cli status",
+    "i18n:sync": "i18next-cli sync",
+    "i18n:add": "tsx scripts/add-translation.ts",
+    "i18n:translate": "tsx scripts/auto-translate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/lodash.set": "^4.3.9",
+    "@types/node": "^25.0.7",
+    "fs-extra": "^11.3.3",
+    "i18next-cli": "^1.42.8",
+    "lodash.set": "^4.3.2",
+    "prompts": "^2.4.2",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "vitest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "i18next": ">=20.0.0",
+    "react-i18next": ">=12.0.0"
+  }
+}
