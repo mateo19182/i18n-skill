@@ -4,11 +4,27 @@ OpenCode skill for managing i18n translations using i18next-cli.
 
 ## Installation
 
+### Option 1: Install as a Skill (Recommended)
+
+If you have the `skills` CLI installed, you can add this skill to your project:
+
+```bash
+npx skills add m19182/i18n-skill
+```
+
+Or install globally:
+
+```bash
+npx skills add m19182/i18n-skill -g
+```
+
+### Option 2: Install as an NPM Package
+
 ```bash
 cd your-frontend-project
-npm install i18n-opencode-skill --save-dev
+npm install i18n-skill --save-dev
 # or
-pnpm add i18n-opencode-skill -D
+pnpm add i18n-skill -D
 ```
 
 ## Setup
@@ -26,8 +42,8 @@ npm install i18next react-i18next
     "i18n:extract": "i18next-cli extract",
     "i18n:status": "i18next-cli status",
     "i18n:sync": "i18next-cli sync",
-    "i18n:add": "tsx node_modules/i18n-opencode-skill/scripts/add-translation.ts",
-    "i18n:translate": "tsx node_modules/i18n-opencode-skill/scripts/auto-translate.ts"
+    "i18n:add": "tsx node_modules/i18n-skill/scripts/add-translation.ts",
+    "i18n:translate": "tsx node_modules/i18n-skill/scripts/auto-translate.ts"
   }
 }
 ```
